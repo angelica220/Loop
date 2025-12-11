@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     min-height: 100%;
 }
 
 body {
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     font-family: 'montserratregular';
@@ -66,7 +68,8 @@ main {
     flex-direction: row;
 }
 
-.man, .woman {
+.man,
+.woman {
     width: 50%;
     padding-top: 60px;
     padding-bottom: 58px;
@@ -80,7 +83,7 @@ main {
 }
 
 .woman {
-    background: url(../img/woman.png) no-repeat;
+    background: url('../img/woman.png') no-repeat;
     background-position-x: right;
     background-position-y: bottom;
     background-size: 200px;
@@ -154,8 +157,6 @@ main {
     font-weight: 600;
     margin-top: 25px;
     margin-bottom: 15px;
-    margin-left: 70px;
-    margin-right: 70px;
 }
 
 .card__price {
@@ -180,7 +181,12 @@ main {
 }
 
 .header-menu {
+    background-color: #F9F6F1;
     min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 .section__wrapper {
@@ -188,6 +194,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    min-height: 90px;
 }
 
 ul {
@@ -197,16 +204,367 @@ ul {
     justify-content: center;
     gap: 35px;
     align-items: center;
-    
+
+}
+
+.imglogo {
+    margin-right: 10px;
 }
 
 .text {
     font-family: 'montserratbold';
     font-size: 24px;
+    margin-left: 10px;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.menu__item {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 0 15px 0;
+}
+
+.menu__link:hover {
+    color: #D7B399;
+}
+
+.basket__link1 {
+    margin-right: -8px;
+}
+
+.basket__link2 {
+    margin-left: -8px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+/*---------banner------------*/
+
+.banner {
+    margin-top: 90px;
+}
+
+.slider__item {
+    padding-top: 138px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url('../img/running_shoes_PNG5823.png') no-repeat right center;
+
+}
+
+.textbig {
+    margin-top: 36px;
+    margin-bottom: 71px;
+    font-size: 55px;
+    font-family: 'montserratbold';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.textmin {
+    font-family: 'montserratlight';
+    font-size: 30px;
+}
+
+.button {
+    font-size: 16px;
+    color: white;
+    padding: 18px 30px 18px 30px;
+    border: none;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    width: 240px;
+    height: 55px;
+    font-family: 'montserratlight';
+}
+
+.price {
+    font-family: 'montserratbold';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.priceold {
+    text-decoration-line: line-through;
+    font-size: 24px;
+}
+
+.pricenew {
+    color: #D84033;
+    font-size: 42px;
+    margin-top: 14px;
+}
+
+.slider__wrapper {
+    position: relative;
+}
+
+.buttonarrow {
+    position: absolute;
+    top: 50%;
+}
+
+.arrowleft {
+    left: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+.arrowright {
+    right: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+.buttonpanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 723px;
+}
+
+.panel {
+    margin: 15px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #000000;
+}
+
+/*---------dress-----------*/
+
+.dress__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dress__item {
+    width: 25%;
+    height: 236px;
+    text-align: right;
+    position: relative;
+}
+
+.dress__text {
+    position: absolute;
+    text-transform: uppercase;
+    left: 30px;
+    bottom: 24px;
+    font-size: 21px;
+    font-family: 'montserratlight';
+}
+
+
+/*---------experience--------*/
+
+/* .card:nth-child(2) {
+    position: fixed;
+    top: 200px;
+    left: 300px;
+    z-index: 100;
+
+}
+
+.new {
+    position: relative;
+} */
+
+.card {
+    position: relative;
+}
+
+.card .bi-heart-fill {
+    fill: rgb(192, 18, 91);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/*-----------*/
+
+/*.subscribe img {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+} */
+
+/*----------media----------*/
+
+@media(max-width:1326px) {
+    .arrowleft {
+        left: 0;
+    }
+
+    .arrowright {
+        right: 0;
+    }
+}
+
+@media(max-width:1200px) {
+    .catalog {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:1200px) {
+    .card {
+        width: 45%;
+    }
+
+    .card__img {
+        width: 80%;
+    }
+}
+
+@media(max-width:1200px) {
+    .dress__item {
+        width: 25%;
+    }
+}
+
+@media(max-width:1100px) {
+    .container {
+        width: auto;
+        padding: 0 30px;
+    }
+}
+
+@media(max-width:992px) {
+    .menu__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        order: -1;
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .logo {
+        order: -1;
+        width: 70%;
+    }
+
+    .basket {
+        order: -1;
+        text-align: right;
+    }
+}
+
+@media(max-width:1110px) {
+    .dress__item {
+        width: 33%;
+    }
+}
+
+@media(max-width:768px) {
+    .man-woman .container {
+        flex-direction: column;
+    }
+
+    .man,
+    .woman {
+        width: 100%;
+    }
+
+    .man-woman {
+        background: linear-gradient(180deg, #F9F6F1 0%, #F9F6F1 50%, #F9E0E0 50%, #F9E0E0 100%);
+    }
+}
+
+@media(max-width:768px) {
+    .slider__wrapper {
+        display: none;
+    }
+
+    .slider__item {
+        display: none;
+    }
+
+    .header {
+        min-height: 90px;
+    }
+}
+
+@media(max-width:600px) {
+
+    .basket,
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .menu__list {
+        flex-direction: column;
+    }
+
+    .arrow {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .noarrow {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .menu__list {
+        align-items: first baseline;
+    }
+}
+
+.show {
+    display: block;
+}
+
+@media(max-width:576px) {
+    .card {
+        width: 90%;
+    }
+
+    .new .container {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+
+@media(max-width:900px) {
+    .dress__item {
+        width: 50%;
+    }
+}
+
+@media(max-width:620px) {
+    .dress__item {
+        width: 100%;
+    }
 }

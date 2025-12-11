@@ -12,23 +12,40 @@
 <body>
     <header class="header">
         <section class="section header-menu">
-            <div class="section__wrapper container">
+            <div class="section__wrapper container menu__wrapper">
+                <button class="navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="img/bars.png" width="30px">
+                </button>
                 <div class="menu">
-                    <ul class="menu__list">
-                        <Li class="menu__item"><a class="menu__link" href="#">Для мужчин</a></Li>
-                        <Li class="menu__item"><a class="menu__link" href="#">Для женщин</a></Li>
-                        <Li class="menu__item"><a class="menu__link" href="#">Для детей</a></Li>
+                    <ul class="menu__list arrow">
+                        <Li class="menu__item"><a class="menu__link" href="#">Для мужчин</a>
+                            <svg width="5" height="4" viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.16507 3.75L5.39421e-06 4.07833e-07L4.33013 2.92811e-08L2.16507 3.75Z"
+                                    fill="#212121" />
+                            </svg>
+                        </Li>
+                        <Li class="menu__item"><a class="menu__link" href="#">Для женщин</a>
+                            <svg width="5" height="4" viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.16507 3.75L5.39421e-06 4.07833e-07L4.33013 2.92811e-08L2.16507 3.75Z"
+                                    fill="#212121" />
+                            </svg>
+                        </Li>
+                        <Li class="menu__item"><a class="menu__link" href="#">Для детей</a>
+                            <svg width="5" height="4" viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.16507 3.75L5.39421e-06 4.07833e-07L4.33013 2.92811e-08L2.16507 3.75Z"
+                                    fill="#212121" />
+                            </svg>
+                        </Li>
                     </ul>
                 </div>
-                <div>
-                    <a class="logo header__logo">
-                        <img src="img/logo.png" alt="Логотип">
-                        <h1 class="text">THE LOOP</h1>
-                    </a>
-                    
-                </div>
+
+                <a class="logo header__logo">
+                    <img class="imglogo" src="img/logo.png" alt="Логотип">
+                    <h1 class="text">THE LOOP</h1>
+                </a>
+
                 <div class="menu">
-                    <ul class="menu__list">
+                    <ul class="menu__list noarrow">
                         <li class="menu__item"><a class="menu__link" href="#">Оплата</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
                     </ul>
@@ -36,12 +53,12 @@
                 <div class="basket">
                     <ul class="basket__list">
                         <li class="basket__item">
-                            <a class="basket__link" href="#">
+                            <a class="basket__link1" href="#">
                                 <img src="img/shopping-basket-button.png" alt="Корзина">
                             </a>
                         </li>
                         <li class="basket__item">
-                            <a class="basket__link" href="#">
+                            <a class="basket__link2" href="#">
                                 <img src="img/basket.png" alt="Количество товаров">
                             </a>
                         </li>
@@ -51,7 +68,47 @@
         </section>
         <section class="section banner">
             <div class="container">
-                2
+                <div class="slider__wrapper">
+                    <div class="slider__list">
+                        <div class="slider__item">
+                            <div class="text">
+                                <p class="textmin">Зимняя распродажа</p>
+                                <h2 class="textbig">СКИДКИ ДО 90%</h2>
+                                <button class="button">СМОТРЕТЬ МОДЕЛИ</button>
+                                </a>
+                            </div>
+                            <div class="price">
+                                <p class="priceold">9 900 ₽</p>
+                                <p class="pricenew">1 900 ₽</p>
+                            </div>
+                        </div>
+                        <!-- <div class="buttonpanel">
+                            <svg class="panel" width="40" height="7" viewBox="0 0 40 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="7" fill="#CECECE" />
+                            </svg>
+                            <svg class="panel" width="40" height="7" viewBox="0 0 40 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="7" fill="#D7B399" />
+                            </svg>
+                            <svg class="panel" width="40" height="7" viewBox="0 0 40 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="7" fill="#CECECE" />
+                            </svg>
+                            <svg class="panel" width="40" height="7" viewBox="0 0 40 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="7" fill="#CECECE" />
+                            </svg>
+                        </div>  -->
+                    </div>
+                    <button class="buttonarrow arrowleft">
+                        <img src="img/Group 2.7.png" alt="">
+                    </button>
+                    <button class="buttonarrow arrowright">
+                        <img src="img/Group 2.7 (1).png" alt="">
+                    </button>
+                </div>
+
             </div>
         </section>
     </header>
@@ -89,9 +146,39 @@
             </div>
         </section>
         <section class="section dress">
-            <div class="container">
-                5
-            </div>
+            <div class="container dress__wrapper">
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt1.png" alt="">
+                </div>
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt2.png" alt="">
+                </div>
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt1.png" alt="">
+                </div>
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt2.png" alt="">
+                </div>
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt2.png" alt="">
+                </div>
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt1.png" alt="">
+                </div>
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt2.png" alt="">
+                </div>
+                <div class="dress__item">
+                    <p class="dress__text">ПЛАТЬЯ</p>
+                    <img src="img/tshirt1.png" alt="">
+                </div>
         </section>
         <section class="section  new">
             <div class="container">
@@ -101,24 +188,44 @@
                         <img class="card__img" src="img/dress.png" alt="Коктейльное платье">
                         <h3 class="card__title">Коктейльное платье</h3>
                         <p class="card__price">₽ 40 000</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
                     </div>
 
                     <div class="card">
                         <img class="card__img" src="img/dress.png" alt="Коктейльное платье">
                         <h3 class="card__title">Коктейльное платье</h3>
                         <p class="card__price">₽ 40 000</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
                     </div>
 
                     <div class="card">
                         <img class="card__img" src="img/dress.png" alt="Коктейльное платье">
                         <h3 class="card__title">Коктейльное платье</h3>
                         <p class="card__price">₽ 40 000</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
                     </div>
 
                     <div class="card">
                         <img class="card__img" src="img/dress.png" alt="Коктейльное платье">
                         <h3 class="card__title">Коктейльное платье</h3>
                         <p class="card__price">₽ 40 000</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
                     </div>
                 </div>
                 <button class="btn">все модели <svg width="21" height="8" viewBox="0 0 21 8" fill="none"
@@ -153,6 +260,17 @@
             </div>
         </section>
     </footer>
+
+    <script type="text/javascript">
+        const btn = document.getElementById("navbar-toggler");//выбрать элемент кнопку
+        const menus = document.querySelectorAll(".menu");//выбрать все меню
+        btn.addEventListener("click", () => {//когда пользователь кликнет по кнопке
+            for (let el of menus) { //перебрать все меню и к каждому
+                el.classList.toggle("show"); //применить/убрать стиль show
+            }
+        })
+    </script>
+
 </body>
 
 </html>
