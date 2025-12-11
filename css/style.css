@@ -377,7 +377,17 @@ ul {
     font-family: 'montserratlight';
 }
 
+.grey {
+    background: #f4f4f4;
+}
 
+.cream {
+    background: #f9f6f1;
+}
+
+.dress__item img {
+    height: 100%;
+}
 /*---------experience--------*/
 
 /* .card:nth-child(2) {
