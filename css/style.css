@@ -248,6 +248,8 @@ ul {
 
 .navbar-toggler {
     display: none;
+    background: transparent;
+    border: none;
 }
 
 /*---------banner------------*/
@@ -377,6 +379,11 @@ ul {
     font-family: 'montserratlight';
 }
 
+.dress .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .grey {
     background: #f4f4f4;
 }
@@ -500,6 +507,10 @@ ul {
     .man,
     .woman {
         width: 100%;
+    }
+
+    .woman {
+        padding-left: 0;
     }
 
     .man-woman {
